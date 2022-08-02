@@ -3,7 +3,7 @@
 Import Database (QLDOANVIEN.bacpac) vào Microsoft SQL của bạn.
 
 ## Bước 2:
-Vào file App.config thay đổi tên data source, ở đây của tôi là "ADMIN\SQLEXPRESS01"
+Vào file App.Config thay đổi tên data source, ở đây của tôi là "ADMIN\SQLEXPRESS01"
  
     bash
         <connectionStrings>
@@ -14,6 +14,6 @@ Vào file App.config thay đổi tên data source, ở đây của tôi là "ADM
 Khởi động chương trình bằng visual studio
 
     bash
-        login
-        tài khoản: admin
-        mật khẩu: admin
+        Login form:
+        - Tài khoản: admin
+        - Mật khẩu: admin
