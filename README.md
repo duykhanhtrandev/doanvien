@@ -1,9 +1,9 @@
-# CÀI ĐẶT CHƯƠNG TRÌNH
-## Bước 1: 
-Import Database (QLDOANVIEN.bacpac) vào Microsoft SQL.
+# PROGRAMING SETTING
+## STEP 1: 
+Import Database (QLDOANVIEN.bacpac) into your Microsoft SQL.
 
-## Bước 2:
-Vào file App.Config thay đổi data source thành Server name của máy đang dùng, ví dụ: "ADMIN\SQLEXPRESS01"
+## Step 2:
+Go to the App.Config files in Datalayer, ManageLayer and DLDOANVIEN to change the "data source" in the <connectionStrings> tag to the Server name of the machine in use, for example: "ADMIN\SQLEXPRESS01"
  
     bash
         <connectionStrings>
@@ -11,9 +11,9 @@ Vào file App.Config thay đổi data source thành Server name của máy đang
         </connectionStrings>
 
 ## Bước 3:
-Khởi động chương trình bằng visual studio
+Start the program with Visual Studio
 
     bash
         Login form:
-        - Tài khoản: admin
-        - Mật khẩu: admin
+        - Username: admin
+        - Password: admin
