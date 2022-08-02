@@ -1,3 +1,3 @@
 # doanvien
-# username: admin
-# password: admin
+username: admin
+password: admin
