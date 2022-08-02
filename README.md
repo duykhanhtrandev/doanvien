@@ -1,9 +1,9 @@
 # CÀI ĐẶT CHƯƠNG TRÌNH
 ## Bước 1: 
-Import Database (QLDOANVIEN.bacpac) vào Microsoft SQL của bạn.
+Import Database (QLDOANVIEN.bacpac) vào Microsoft SQL.
 
 ## Bước 2:
-Vào file App.Config thay đổi data source thành Server name của bạn, ở đây của tôi là "ADMIN\SQLEXPRESS01"
+Vào file App.Config thay đổi data source thành Server name của máy đang dùng, ví dụ: "ADMIN\SQLEXPRESS01"
  
     bash
         <connectionStrings>
