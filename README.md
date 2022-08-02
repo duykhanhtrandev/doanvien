@@ -3,7 +3,7 @@
 Import Database (QLDOANVIEN.bacpac) into your Microsoft SQL.
 
 ## Step 2:
-Go to the App.Config files in Datalayer, ManageLayer and DLDOANVIEN to change the "data source" in the <connectionStrings> tag to the Server name of the machine in use, for example: "ADMIN\SQLEXPRESS01"
+Go to the App.Config files in Datalayer, ManageLayer and DLDOANVIEN to change the "data source" in the "<connectionStrings>" tag to the Server name of the machine in use, for example: "ADMIN\SQLEXPRESS01"
  
     bash
         <connectionStrings>
