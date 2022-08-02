@@ -1,0 +1,12 @@
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\bin\Debug\DataLayer.dll.config
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\bin\Debug\DataLayer.dll
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\bin\Debug\DataLayer.pdb
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\bin\Debug\EntityFramework.dll
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\bin\Debug\EntityFramework.xml
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\obj\Debug\DataLayer.csproj.AssemblyReference.cache
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\obj\Debug\DataLayer.csproj.CopyComplete
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\obj\Debug\DataLayer.dll
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\DataLayer\obj\Debug\DataLayer.pdb

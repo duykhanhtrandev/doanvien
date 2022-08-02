@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1ed1dba7b2c34917ab127c16c96e740d" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_CHIBO" Width="1.5" PointX="0.75" PointY="16.625" />
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_CHUCVU" Width="1.5" PointX="0.75" PointY="19" />
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_DANTOC" Width="1.5" PointX="0.75" PointY="3.5" />
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_DOANVIEN" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_KHENTHUONG_KYLUAT" Width="1.5" PointX="5.25" PointY="2.375" />
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_LOP" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_NOISINHHOATDOAN" Width="1.5" PointX="0.75" PointY="9" />
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_QUYEN" Width="1.5" PointX="7.75" PointY="1.25" />
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_TAIKHOAN" Width="1.5" PointX="10" PointY="0.875" />
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_TONGIAO" Width="1.5" PointX="0.75" PointY="12" />
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_TRINHDO" Width="1.5" PointX="0.75" PointY="14.25" />
+        <AssociationConnector Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_CHIBO1" />
+        <AssociationConnector Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_CHUCVU1" />
+        <AssociationConnector Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_DANTOC" />
+        <AssociationConnector Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_LOP1" />
+        <AssociationConnector Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_NOISINHHOATDOAN" />
+        <AssociationConnector Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_TONGIAO" />
+        <AssociationConnector Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_TRINHDO1" />
+        <AssociationConnector Association="QLDOANVIENModel.FK_tb_KHENTHUONG_KYLUAT_tb_DOANVIEN" />
+        <AssociationConnector Association="QLDOANVIENModel.FK_tb_TAIKHOAN_tb_QUYEN" />
+        <EntityTypeShape EntityType="QLDOANVIENModel.tb_DOANVIEN_BIKHAITRU" Width="1.5" PointX="7.375" PointY="4.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,15 @@
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\bin\Debug\ManageLayer.dll.config
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\bin\Debug\ManageLayer.dll
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\bin\Debug\ManageLayer.pdb
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\bin\Debug\DataLayer.dll
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\bin\Debug\EntityFramework.dll
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\bin\Debug\DataLayer.pdb
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\bin\Debug\DataLayer.dll.config
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\bin\Debug\EntityFramework.xml
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\obj\Debug\ManageLayer.csproj.AssemblyReference.cache
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\obj\Debug\ManageLayer.csproj.CoreCompileInputs.cache
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\obj\Debug\ManageLayer.csproj.CopyComplete
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\obj\Debug\ManageLayer.dll
+D:\Chuyen de mang may tinh va he thong thong tin\Nhom 12\QLDOANVIEN\ManageLayer\obj\Debug\ManageLayer.pdb

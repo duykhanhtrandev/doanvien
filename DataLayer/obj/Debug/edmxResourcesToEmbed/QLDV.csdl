@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLDOANVIENModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="QLDOANVIENEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_CHIBO" EntityType="QLDOANVIENModel.tb_CHIBO" />
+    <EntitySet Name="tb_CHUCVU" EntityType="QLDOANVIENModel.tb_CHUCVU" />
+    <EntitySet Name="tb_DANTOC" EntityType="QLDOANVIENModel.tb_DANTOC" />
+    <EntitySet Name="tb_DOANVIEN" EntityType="QLDOANVIENModel.tb_DOANVIEN" />
+    <EntitySet Name="tb_KHENTHUONG_KYLUAT" EntityType="QLDOANVIENModel.tb_KHENTHUONG_KYLUAT" />
+    <EntitySet Name="tb_LOP" EntityType="QLDOANVIENModel.tb_LOP" />
+    <EntitySet Name="tb_NOISINHHOATDOAN" EntityType="QLDOANVIENModel.tb_NOISINHHOATDOAN" />
+    <EntitySet Name="tb_QUYEN" EntityType="QLDOANVIENModel.tb_QUYEN" />
+    <EntitySet Name="tb_TAIKHOAN" EntityType="QLDOANVIENModel.tb_TAIKHOAN" />
+    <EntitySet Name="tb_TONGIAO" EntityType="QLDOANVIENModel.tb_TONGIAO" />
+    <EntitySet Name="tb_TRINHDO" EntityType="QLDOANVIENModel.tb_TRINHDO" />
+    <AssociationSet Name="FK_tb_DOANVIEN_tb_CHIBO1" Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_CHIBO1">
+      <End Role="tb_CHIBO" EntitySet="tb_CHIBO" />
+      <End Role="tb_DOANVIEN" EntitySet="tb_DOANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_DOANVIEN_tb_CHUCVU1" Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_CHUCVU1">
+      <End Role="tb_CHUCVU" EntitySet="tb_CHUCVU" />
+      <End Role="tb_DOANVIEN" EntitySet="tb_DOANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_DOANVIEN_tb_DANTOC" Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_DANTOC">
+      <End Role="tb_DANTOC" EntitySet="tb_DANTOC" />
+      <End Role="tb_DOANVIEN" EntitySet="tb_DOANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_DOANVIEN_tb_LOP1" Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_LOP1">
+      <End Role="tb_LOP" EntitySet="tb_LOP" />
+      <End Role="tb_DOANVIEN" EntitySet="tb_DOANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_DOANVIEN_tb_NOISINHHOATDOAN" Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_NOISINHHOATDOAN">
+      <End Role="tb_NOISINHHOATDOAN" EntitySet="tb_NOISINHHOATDOAN" />
+      <End Role="tb_DOANVIEN" EntitySet="tb_DOANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_DOANVIEN_tb_TONGIAO" Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_TONGIAO">
+      <End Role="tb_TONGIAO" EntitySet="tb_TONGIAO" />
+      <End Role="tb_DOANVIEN" EntitySet="tb_DOANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_DOANVIEN_tb_TRINHDO1" Association="QLDOANVIENModel.FK_tb_DOANVIEN_tb_TRINHDO1">
+      <End Role="tb_TRINHDO" EntitySet="tb_TRINHDO" />
+      <End Role="tb_DOANVIEN" EntitySet="tb_DOANVIEN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_KHENTHUONG_KYLUAT_tb_DOANVIEN" Association="QLDOANVIENModel.FK_tb_KHENTHUONG_KYLUAT_tb_DOANVIEN">
+      <End Role="tb_DOANVIEN" EntitySet="tb_DOANVIEN" />
+      <End Role="tb_KHENTHUONG_KYLUAT" EntitySet="tb_KHENTHUONG_KYLUAT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_TAIKHOAN_tb_QUYEN" Association="QLDOANVIENModel.FK_tb_TAIKHOAN_tb_QUYEN">
+      <End Role="tb_QUYEN" EntitySet="tb_QUYEN" />
+      <End Role="tb_TAIKHOAN" EntitySet="tb_TAIKHOAN" />
+    </AssociationSet>
+    <EntitySet Name="tb_DOANVIEN_BIKHAITRU" EntityType="QLDOANVIENModel.tb_DOANVIEN_BIKHAITRU" />
+  </EntityContainer>
+  <EntityType Name="tb_CHIBO">
+    <Key>
+      <PropertyRef Name="IDCHIBO" />
+    </Key>
+    <Property Name="IDCHIBO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENCHIBO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_DOANVIEN" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_CHIBO1" FromRole="tb_CHIBO" ToRole="tb_DOANVIEN" />
+  </EntityType>
+  <EntityType Name="tb_CHUCVU">
+    <Key>
+      <PropertyRef Name="IDCHUCVU" />
+    </Key>
+    <Property Name="IDCHUCVU" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENCHUCVU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_DOANVIEN" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_CHUCVU1" FromRole="tb_CHUCVU" ToRole="tb_DOANVIEN" />
+  </EntityType>
+  <EntityType Name="tb_DANTOC">
+    <Key>
+      <PropertyRef Name="IDDANTOC" />
+    </Key>
+    <Property Name="IDDANTOC" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENDANTOC" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Thongtin" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_DOANVIEN" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_DANTOC" FromRole="tb_DANTOC" ToRole="tb_DOANVIEN" />
+  </EntityType>
+  <EntityType Name="tb_DOANVIEN">
+    <Key>
+      <PropertyRef Name="MADOANVIEN" />
+    </Key>
+    <Property Name="MADOANVIEN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="HOTEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GIOITINH" Type="Boolean" />
+    <Property Name="NGAYSINH" Type="DateTime" Precision="3" />
+    <Property Name="DIENTHOAI" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CCCD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DIACHI" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="NGAYVAODOAN" Type="DateTime" Precision="3" />
+    <Property Name="NGAYVAODANG" Type="DateTime" Precision="3" />
+    <Property Name="PHIDOAN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HINHANH" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IDCHIBO" Type="Int32" />
+    <Property Name="IDLOP" Type="Int32" />
+    <Property Name="IDCHUCVU" Type="Int32" />
+    <Property Name="IDTRINHDO" Type="Int32" />
+    <Property Name="HOATDONG" Type="Boolean" />
+    <Property Name="IDTONGIAO" Type="Int32" />
+    <Property Name="IDDANTOC" Type="Int32" />
+    <Property Name="MANOISINHHOATDOAN" Type="Int32" />
+    <Property Name="DAKHAITRU" Type="Boolean" />
+    <NavigationProperty Name="tb_CHIBO" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_CHIBO1" FromRole="tb_DOANVIEN" ToRole="tb_CHIBO" />
+    <NavigationProperty Name="tb_CHUCVU" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_CHUCVU1" FromRole="tb_DOANVIEN" ToRole="tb_CHUCVU" />
+    <NavigationProperty Name="tb_DANTOC" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_DANTOC" FromRole="tb_DOANVIEN" ToRole="tb_DANTOC" />
+    <NavigationProperty Name="tb_LOP" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_LOP1" FromRole="tb_DOANVIEN" ToRole="tb_LOP" />
+    <NavigationProperty Name="tb_NOISINHHOATDOAN" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_NOISINHHOATDOAN" FromRole="tb_DOANVIEN" ToRole="tb_NOISINHHOATDOAN" />
+    <NavigationProperty Name="tb_TONGIAO" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_TONGIAO" FromRole="tb_DOANVIEN" ToRole="tb_TONGIAO" />
+    <NavigationProperty Name="tb_TRINHDO" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_TRINHDO1" FromRole="tb_DOANVIEN" ToRole="tb_TRINHDO" />
+    <NavigationProperty Name="tb_KHENTHUONG_KYLUAT" Relationship="QLDOANVIENModel.FK_tb_KHENTHUONG_KYLUAT_tb_DOANVIEN" FromRole="tb_DOANVIEN" ToRole="tb_KHENTHUONG_KYLUAT" />
+  </EntityType>
+  <EntityType Name="tb_KHENTHUONG_KYLUAT">
+    <Key>
+      <PropertyRef Name="SOQUYETDINH" />
+    </Key>
+    <Property Name="SOQUYETDINH" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LYDO" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NOIDUNG" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="NGAY" Type="DateTime" Precision="3" />
+    <Property Name="MADOANVIEN" Type="Int32" />
+    <Property Name="LOAI" Type="Int32" />
+    <Property Name="TUNGAY" Type="DateTime" Precision="3" />
+    <Property Name="DENNGAY" Type="DateTime" Precision="3" />
+    <Property Name="CREATED_BY" Type="Int32" />
+    <Property Name="CREARTED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATED_BY" Type="Int32" />
+    <Property Name="UPDATED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DELETED_BY" Type="Int32" />
+    <Property Name="DELETED_DATE" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tb_DOANVIEN" Relationship="QLDOANVIENModel.FK_tb_KHENTHUONG_KYLUAT_tb_DOANVIEN" FromRole="tb_KHENTHUONG_KYLUAT" ToRole="tb_DOANVIEN" />
+  </EntityType>
+  <EntityType Name="tb_LOP">
+    <Key>
+      <PropertyRef Name="IDLOP" />
+    </Key>
+    <Property Name="IDLOP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENLOP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_DOANVIEN" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_LOP1" FromRole="tb_LOP" ToRole="tb_DOANVIEN" />
+  </EntityType>
+  <EntityType Name="tb_NOISINHHOATDOAN">
+    <Key>
+      <PropertyRef Name="MANOISINHHOATDOAN" />
+    </Key>
+    <Property Name="MANOISINHHOATDOAN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENNOISINHHOATDOAN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DIENTHOAI" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DIACHI" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_DOANVIEN" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_NOISINHHOATDOAN" FromRole="tb_NOISINHHOATDOAN" ToRole="tb_DOANVIEN" />
+  </EntityType>
+  <EntityType Name="tb_QUYEN">
+    <Key>
+      <PropertyRef Name="IDQUYEN" />
+    </Key>
+    <Property Name="IDQUYEN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENQUYEN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_TAIKHOAN" Relationship="QLDOANVIENModel.FK_tb_TAIKHOAN_tb_QUYEN" FromRole="tb_QUYEN" ToRole="tb_TAIKHOAN" />
+  </EntityType>
+  <EntityType Name="tb_TAIKHOAN">
+    <Key>
+      <PropertyRef Name="IDTAILHOAN" />
+    </Key>
+    <Property Name="IDTAILHOAN" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENDANGNHAP" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MATKHAU" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="HOATDONG" Type="Boolean" />
+    <Property Name="IDQUYEN" Type="Int32" />
+    <NavigationProperty Name="tb_QUYEN" Relationship="QLDOANVIENModel.FK_tb_TAIKHOAN_tb_QUYEN" FromRole="tb_TAIKHOAN" ToRole="tb_QUYEN" />
+  </EntityType>
+  <EntityType Name="tb_TONGIAO">
+    <Key>
+      <PropertyRef Name="IDTONGIAO" />
+    </Key>
+    <Property Name="IDTONGIAO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENTONGIAO" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_DOANVIEN" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_TONGIAO" FromRole="tb_TONGIAO" ToRole="tb_DOANVIEN" />
+  </EntityType>
+  <EntityType Name="tb_TRINHDO">
+    <Key>
+      <PropertyRef Name="IDTRINHDO" />
+    </Key>
+    <Property Name="IDTRINHDO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TENTRINHDO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tb_DOANVIEN" Relationship="QLDOANVIENModel.FK_tb_DOANVIEN_tb_TRINHDO1" FromRole="tb_TRINHDO" ToRole="tb_DOANVIEN" />
+  </EntityType>
+  <Association Name="FK_tb_DOANVIEN_tb_CHIBO1">
+    <End Type="QLDOANVIENModel.tb_CHIBO" Role="tb_CHIBO" Multiplicity="0..1" />
+    <End Type="QLDOANVIENModel.tb_DOANVIEN" Role="tb_DOANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_CHIBO">
+        <PropertyRef Name="IDCHIBO" />
+      </Principal>
+      <Dependent Role="tb_DOANVIEN">
+        <PropertyRef Name="IDCHIBO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_DOANVIEN_tb_CHUCVU1">
+    <End Type="QLDOANVIENModel.tb_CHUCVU" Role="tb_CHUCVU" Multiplicity="0..1" />
+    <End Type="QLDOANVIENModel.tb_DOANVIEN" Role="tb_DOANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_CHUCVU">
+        <PropertyRef Name="IDCHUCVU" />
+      </Principal>
+      <Dependent Role="tb_DOANVIEN">
+        <PropertyRef Name="IDCHUCVU" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_DOANVIEN_tb_DANTOC">
+    <End Type="QLDOANVIENModel.tb_DANTOC" Role="tb_DANTOC" Multiplicity="0..1" />
+    <End Type="QLDOANVIENModel.tb_DOANVIEN" Role="tb_DOANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_DANTOC">
+        <PropertyRef Name="IDDANTOC" />
+      </Principal>
+      <Dependent Role="tb_DOANVIEN">
+        <PropertyRef Name="IDDANTOC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_DOANVIEN_tb_LOP1">
+    <End Type="QLDOANVIENModel.tb_LOP" Role="tb_LOP" Multiplicity="0..1" />
+    <End Type="QLDOANVIENModel.tb_DOANVIEN" Role="tb_DOANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_LOP">
+        <PropertyRef Name="IDLOP" />
+      </Principal>
+      <Dependent Role="tb_DOANVIEN">
+        <PropertyRef Name="IDLOP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_DOANVIEN_tb_NOISINHHOATDOAN">
+    <End Type="QLDOANVIENModel.tb_NOISINHHOATDOAN" Role="tb_NOISINHHOATDOAN" Multiplicity="0..1" />
+    <End Type="QLDOANVIENModel.tb_DOANVIEN" Role="tb_DOANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_NOISINHHOATDOAN">
+        <PropertyRef Name="MANOISINHHOATDOAN" />
+      </Principal>
+      <Dependent Role="tb_DOANVIEN">
+        <PropertyRef Name="MANOISINHHOATDOAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_DOANVIEN_tb_TONGIAO">
+    <End Type="QLDOANVIENModel.tb_TONGIAO" Role="tb_TONGIAO" Multiplicity="0..1" />
+    <End Type="QLDOANVIENModel.tb_DOANVIEN" Role="tb_DOANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_TONGIAO">
+        <PropertyRef Name="IDTONGIAO" />
+      </Principal>
+      <Dependent Role="tb_DOANVIEN">
+        <PropertyRef Name="IDTONGIAO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_DOANVIEN_tb_TRINHDO1">
+    <End Type="QLDOANVIENModel.tb_TRINHDO" Role="tb_TRINHDO" Multiplicity="0..1" />
+    <End Type="QLDOANVIENModel.tb_DOANVIEN" Role="tb_DOANVIEN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_TRINHDO">
+        <PropertyRef Name="IDTRINHDO" />
+      </Principal>
+      <Dependent Role="tb_DOANVIEN">
+        <PropertyRef Name="IDTRINHDO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_KHENTHUONG_KYLUAT_tb_DOANVIEN">
+    <End Type="QLDOANVIENModel.tb_DOANVIEN" Role="tb_DOANVIEN" Multiplicity="0..1" />
+    <End Type="QLDOANVIENModel.tb_KHENTHUONG_KYLUAT" Role="tb_KHENTHUONG_KYLUAT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_DOANVIEN">
+        <PropertyRef Name="MADOANVIEN" />
+      </Principal>
+      <Dependent Role="tb_KHENTHUONG_KYLUAT">
+        <PropertyRef Name="MADOANVIEN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_TAIKHOAN_tb_QUYEN">
+    <End Type="QLDOANVIENModel.tb_QUYEN" Role="tb_QUYEN" Multiplicity="0..1" />
+    <End Type="QLDOANVIENModel.tb_TAIKHOAN" Role="tb_TAIKHOAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_QUYEN">
+        <PropertyRef Name="IDQUYEN" />
+      </Principal>
+      <Dependent Role="tb_TAIKHOAN">
+        <PropertyRef Name="IDQUYEN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="tb_DOANVIEN_BIKHAITRU">
+    <Key>
+      <PropertyRef Name="SOQD" />
+    </Key>
+    <Property Name="SOQD" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MADOANVIEN" Type="Int32" />
+    <Property Name="NGAYKHAITRU" Type="DateTime" Precision="3" />
+    <Property Name="LYDO" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="GHICHU" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CREATED_BY" Type="Int32" />
+    <Property Name="CREATED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="UPDATED_BY" Type="Int32" />
+    <Property Name="UPDATED_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DELETED_BY" Type="Int32" />
+    <Property Name="DELETED_DATE" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>
