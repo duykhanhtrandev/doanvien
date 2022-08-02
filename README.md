@@ -10,7 +10,7 @@ Go to the App.Config files in Datalayer, ManageLayer and DLDOANVIEN to change th
             <add name="QLDOANVIENEntities" connectionString="metadata=res://*/QLDV.csdl|res://*/QLDV.ssdl|res://*/QLDV.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=ADMIN\SQLEXPRESS01;initial catalog=QLDOANVIEN;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
         </connectionStrings>
 
-## Bước 3:
+## Step 3:
 Start the program with Visual Studio
 
     bash
