@@ -2,7 +2,7 @@
 ## STEP 1: 
 Import Database (QLDOANVIEN.bacpac) into your Microsoft SQL.
 
-![Database](https://user-images.githubusercontent.com/109634649/182444857-913ee0f4-98fb-4c4c-8451-f0ed9f01b144.png)
+![Database](https://user-images.githubusercontent.com/109634649/182444984-74890694-ff1d-4c0c-a63d-50b50019b80a.png)
 
 ## Step 2:
 Go to the App.Config files in Datalayer, ManageLayer and DLDOANVIEN to change the "data source" in the "connectionStrings" tag to the Server name of the machine in use, for example: "ADMIN\SQLEXPRESS01"
