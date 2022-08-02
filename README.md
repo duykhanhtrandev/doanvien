@@ -1,4 +1,4 @@
-CÀI ĐẶT CHƯƠNG TRÌNH
+CÀI ĐẶT CHƯƠNG TRÌNH <space><space>
 Bước 1: Tải và add database(QLDOANVIEN.bacpac) vào Microsoft SQL của các bạn.
 
 Vào file App.config thay đổi tên data source, ở đây của tôi là "ADMIN\SQLEXPRESS01"
