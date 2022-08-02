@@ -21,4 +21,4 @@ Start the program with Visual Studio
         - Password: admin
 ![login form](https://user-images.githubusercontent.com/109634649/182445341-5087e4a2-022c-428c-b68a-94d59e588a14.png)
 
-![doanvien form](https://user-images.githubusercontent.com/109634649/182445692-d11a33cf-78f2-4165-9aac-0c9cbba84d7b.png)
+![doanvien form](https://user-images.githubusercontent.com/109634649/182445997-08d8c3a9-31f2-483f-a266-76084c530867.png)
