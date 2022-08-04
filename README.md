@@ -1,6 +1,6 @@
 # PROGRAM SETTING
 ## STEP 1: 
-Import Database (QLDOANVIEN.bacpac) into your Microsoft SQL.
+Import Database (QLDOANVIEN.bacpac) into your Microsoft SQL Server.
 
 ![Database](https://user-images.githubusercontent.com/109634649/182444984-74890694-ff1d-4c0c-a63d-50b50019b80a.png)
 
