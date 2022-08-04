@@ -1,4 +1,4 @@
-# PROGRAMING SETTING
+# PROGRAM SETTING
 ## STEP 1: 
 Import Database (QLDOANVIEN.bacpac) into your Microsoft SQL.
 
